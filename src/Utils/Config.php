@@ -11,7 +11,11 @@ class Config
 
     protected function __construct()
     {
-        $this->configFile = getenv('NUVO_CONFIG_FILE') ?: '.nuvo.yml';
+        $root = getcwd() . '/';
+        if (str_contains($root, 'public')) {
+            $root .= '../';
+        }
+        $this->configFile = $root . (getenv('NUVO_CONFIG_FILE') ?: '.nuvo.yml');
         if (!file_exists($this->configFile)) {
             throw new \Exception("Config file not found: {$this->configFile}");
         }
