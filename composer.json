@@ -1,0 +1,22 @@
+{
+    "name": "nuvo-code/config",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "NuvoCode\\Config\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Özer Özdaş",
+            "email": "ozer@ozdas.org"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/yaml": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    }
+}
