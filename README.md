@@ -7,6 +7,17 @@ Default config file is `.nuvo.yml`.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Installation
+
+You can install the package via Composer:
+
+```
+composer require nuvo-code/config
+```
+
+After installing, you need to create a config file named `.nuvo.yml` in your project root directory.
+Or you can override the default config file by setting the `NUVO_CONFIG_FILE` environment variable.
+
 ## Usage
 
 ```php
