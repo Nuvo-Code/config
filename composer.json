@@ -2,6 +2,7 @@
     "name": "nuvo-code/config",
     "description": "A simple configuration library",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "NuvoCode\\Config\\": "src/"

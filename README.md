@@ -3,6 +3,10 @@
 The config package provides a simple way to manage configuration values. You can define NUVO_CONFIG_FILE environment variable to override the default config file.<br>
 Default config file is `.nuvo.yml`.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## Usage
 
 ```php
