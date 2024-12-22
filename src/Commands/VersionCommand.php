@@ -20,7 +20,7 @@ class VersionCommand extends Command
         $this->info("Project updated with version $newVersion.");
 
         $major = explode('.', $newVersion)[0];
-        $changelogPath = base_path('resources/docs/7_changelog/' . $major . '.x.x');
+        $changelogPath = base_path('resources/docs/99_changelog/' . $major . '.x.x');
 
         if (!file_exists($changelogPath)) {
             mkdir($changelogPath, 0777, true);
