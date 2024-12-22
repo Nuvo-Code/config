@@ -1,6 +1,11 @@
 {
     "name": "nuvo-code/config",
     "description": "A simple configuration library",
+    "keywords": [
+        "laravel",
+        "nuvo code",
+        "config library"
+    ],
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -14,9 +19,20 @@
             "email": "ozer@ozdas.org"
         }
     ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NuvoCode\\Config\\NuvoServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
     "minimum-stability": "stable",
     "require": {
         "php": ">=8.2",
+        "laravel/framework": "^9.46.0|^10.34.2|^11.23.5",
         "symfony/yaml": "^7.2"
     },
     "require-dev": {

@@ -11,15 +11,18 @@ class VersionManager extends Config
         parent::__construct();
     }
 
-    public function getVersion()
+    public function getVersion(bool $explode = false)
     {
+        if ($explode) {
+            return explode('.', $this->get('version'));
+        }
         return $this->instance['version'];
     }
 
     public function updateVersion($type = 'patch')
     {
         $version = $this->get('version');
-        
+
         if (!isset($version)) {
             $version = '0.0.0';
         }
